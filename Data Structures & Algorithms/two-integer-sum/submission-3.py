@@ -1,0 +1,13 @@
+from collections import defaultdict
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        n = len(nums)
+        seen = defaultdict(int)
+
+        for i in range(n):
+            complement = target - nums[i]
+            if complement in seen:
+                return [seen[complement], i]   
+            else:
+                seen[nums[i]] = i
+        
