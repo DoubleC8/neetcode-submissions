@@ -6,7 +6,10 @@ class Solution:
 
         for i in range(n):
             complement = target - nums[i]
+
             if complement in seen:
                 return [seen[complement], i]
             else:
                 seen[nums[i]] = i
+        
+        
