@@ -1,11 +1,10 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         closedToOpen = {
-            ")": "(",
+            ")": "(", 
             "]": "[", 
             "}": "{"
         }
-
         stack = []
 
         for c in s:
