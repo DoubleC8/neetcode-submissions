@@ -11,5 +11,3 @@ class Solution:
                 return [seen[complement], i]
             else:
                 seen[nums[i]] = i
-        
-        
