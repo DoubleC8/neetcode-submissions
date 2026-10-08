@@ -7,8 +7,9 @@ class Solution:
             key = [0] * 26
 
             for c in s:
-                key[ord(c) - ord("s")] += 1
+                key[ord(c) - ord('a')] += 1
             
             res[tuple(key)].append(s)
-        
+    
+
         return list(res.values())
