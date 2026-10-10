@@ -14,13 +14,12 @@ class Solution:
         i = 0
 
         while i < n:
-            j = i
-
+            j = i 
             while s[j] != "#":
                 j += 1
-
+            
             len_s = int(s[i:j])
-            res.append(s[j + 1 : j + 1 + len_s])
-            i = j + 1 + len_s
+            res.append(s[j+1:j + len_s + 1])
+            i = j + len_s + 1
         
         return res
